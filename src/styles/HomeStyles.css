@@ -1,7 +1,7 @@
 .home {
     height: 90vh;
     display: flex;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-position: top;
@@ -49,7 +49,7 @@
 @media only screen and (max-width:600px){
     .home{
         justify-content: center;
-        align-items: center;
+        align-items: top;
 
     }
      .headerContainer{
@@ -60,7 +60,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #121619;
+
         color: white;
      }
       .home .headerContainer h1 {
