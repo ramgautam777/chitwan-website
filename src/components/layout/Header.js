@@ -2,7 +2,7 @@ import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import "../../styles/HeaderStyles.css";
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -28,22 +28,24 @@ const Header = () => {
             
               <ul className="mobile-navigation">
                 <li>
-                  <Link to={'/'}>Home</Link>
+            <NavLink activeClassName='active' to={'/'}>
+             Home
+             </NavLink>
                 </li>
                 <li>
-                  <Link to={'/services'}> Services </Link>
+                  <NavLink to={'/services'}> Services </NavLink>
                 </li>
                 <li>
-                  <Link to={'/about'}> About </Link>
+                  <NavLink to={'/about'}> About </NavLink>
                 </li>
                 <li>
-                  <Link to={'/gallery'}> Gallery </Link>
+                  <NavLink to={'/gallery'}> Gallery </NavLink>
                 </li>
                 <li>
-                  <Link to={'/teams'}> Teams </Link>
+                  <NavLink to={'/teams'}> Teams </NavLink>
                 </li>
                 <li>
-                  <Link to={'/contact'}> Contact</Link>
+                  <NavLink to={'/contact'}> Contact</NavLink>
                 </li>
               </ul>
             
@@ -77,22 +79,22 @@ const Header = () => {
             <Box sx={{display: {xs:"none", sm:"block"}}}>
               <ul className="navigation-menu">
                 <li>
-                  <Link to={'/'}>Home</Link>
+                  <NavLink activeClassName='active' to={'/'}>Home</NavLink>
                 </li>
                 <li>
-                  <Link to={'/services'}> Services </Link>
+                  <NavLink to={'/services'}> Services </NavLink>
                 </li>
                 <li>
-                  <Link to={'/about'}> About </Link>
+                  <NavLink to={'/about'}> About </NavLink>
                 </li>
                 <li>
-                  <Link to={'/gallery'}> Gallery </Link>
+                  <NavLink to={'/gallery'}> Gallery </NavLink>
                 </li>
                 <li>
-                  <Link to={'/teams'}> Teams </Link>
+                  <NavLink to={'/teams'}> Teams </NavLink>
                 </li>
                 <li>
-                  <Link to={'/contact'}> Contact</Link>
+                  <NavLink to={'/contact'}> Contact</NavLink>
                 </li>
               </ul>
             </Box>
